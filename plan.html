@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+  <style>
+    *{
+      text-decoration: none;
+    }
+    body{
+  background-image: url("oc-gonzalez-xg8z_KhSorQ-unsplash\ \(1\).jpg");
+}
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .rectangular-box {
+      max-width: 650px;
+      margin-top: 120px;
+      flex-basis: 60%;
+      height: 90px;
+      background-color: #ccc;
+      margin-right: 10px;
+      margin-left: 250px;
+      border-radius: 10px;
+    }
+
+    .square-box {
+      flex-basis: 390px;
+      margin-top: -150px;
+      height: 420px;
+      background-color: #ccc;
+    }
+
+    .map {
+      width: 100%;
+      height: 100%;
+      background-color: #f2f2f2;
+      border: 2px solid #333;
+      box-sizing: border-box;
+    }
+
+    button {
+      position: fixed;
+      top: 50%;
+      border-radius: 0 3px 3px 0;
+      padding: 8px 20px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .back {
+      left: 10px;
+      background: #2d7498;
+    }
+
+    .next {
+      right: 10px;
+      background: #42cc7d;
+    }
+
+    h2 {
+      font-family: "TT Hoves Pro Trial DemiBold";
+      font-size: medium;
+      margin-left: 70px;
+      margin-top: -35px;
+    }
+
+    h5 {
+
+      font-family: "TT Hoves Pro Trial Light";
+      font-size: small;
+      margin-left: 70px;
+      margin-top: -5px;
+    }
+
+    #random {
+      max-width: 500px;
+      border-right: 4px solid #f2f2f2;
+border-radius: 10px;
+    }
+
+    .nights {
+      padding-right: 145px;
+      padding-bottom: 49px;
+      background-color: #ccc;
+      margin-top: -84px;
+      margin-left: 505px;
+      text-align: center;
+      font-family: "TT Hoves Pro Trial DemiBold";
+border-radius: 10px;
+    }
+
+    .nights span {
+      text-align: center;
+      right: 50px;
+    }
+
+    .custom-shape-divider-bottom-1685387054 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+      transform: rotate(180deg);
+    }
+
+    .custom-shape-divider-bottom-1685387054 svg {
+      position: relative;
+      display: block;
+      width: calc(152% + 1.3px);
+      height: 164px;
+      transform: rotateY(180deg);
+    }
+
+    .custom-shape-divider-bottom-1685387054 .shape-fill {
+      fill: #a46161;
+    }
+
+    .rectangular-box lord-icon {
+      margin-left: 10px;
+      top: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 style="font-family: TT Hoves Pro Trial ExtraBold; text-align: center;">Select duration for your cities</h1>
+  <h3 style="font-family: TT Hoves Pro Trial DemiBold; text-align: center;">Start Date: 30 May 2023 - End Date: 03 Jun
+    2023</h3>
+  <div class="container">
+    <div class="rectangular-box" style="margin-bottom: -110px;">
+      <lord-icon src="https://cdn.lordicon.com/fihkmkwt.json" trigger="loop" colors="primary:#121331,secondary:#4bb3fd"
+        state="hover-jump" style="width:50px;height:50px">
+      </lord-icon>
+      <h2>India (edit home city)</h2>
+      <input type="checkbox" style="margin-left:70px;"><label style="font-family: TT Hoves Pro Trial Medium;">I'm coming
+        back to this city | start date: 29 May 2023</label>
+    </div>
+    <div class="rectangular-box" style="margin-bottom: -110px;" id="random">
+      <lord-icon src="https://cdn.lordicon.com/alzqexpi.json" trigger="loop"
+        colors="primary:#121331,secondary:#646e78,tertiary:#ffc738,quaternary:#f9c9c0,quinary:#ebe6ef" state="hover-1"
+        style="width:50px;height:50px">
+      </lord-icon>
+      <h2>Delhi, India</h2>
+      <h5>29 May 2023 - 03 Jun 2023</h5>
+      <div class="nights"><span></span></div>
+    </div>
+    <div class="rectangular-box" style="margin-bottom: -170px;">
+      <lord-icon src="https://cdn.lordicon.com/zeabctil.json" trigger="loop"
+        colors="outline:#121331,primary:#4bb3fd,secondary:#ebe6ef" state="loop" style="width:50px;height:50px">
+      </lord-icon>
+      <h2>India (edit returning city)</h2>
+      <h5>Arrival Date: 03 Jun 2023</h5>
+    </div>
+    <div class="square-box">
+      <div class="map">
+        <iframe class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15076.89592087332!2d72.8319697277345!3d19.14167056419224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1635757298406!5m2!1sen!2sin"
+          allowfullscreen="" loading="lazy"></iframe>
+
+      </div>
+    </div>
+  </div>
+
+  <button class="back"><i class="fa-solid fa-arrow-left"></i> <a href="./company.html">Back</a></button>
+  <button class="next"><i class="fa-solid fa-arrow-right"></i> <a href="#">Next</a></button>
+  <div class="custom-shape-divider-bottom-1685387054">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path
+        d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+        opacity=".25" class="shape-fill"></path>
+      <path
+        d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+        opacity=".5" class="shape-fill"></path>
+      <path
+        d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+        class="shape-fill"></path>
+    </svg>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+
+h1{
+    font-family: TT Hoves Pro Trial ExtraBold; 
+    text-align: center;
+    margin-top: -35px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 230px
+}
+body{
+    background-image: url("oc-gonzalez-xg8z_KhSorQ-unsplash\ \(1\).jpg");
+    object-fit: cover;
+}
+label {
+    display: block;
+    margin-left:  -330px;
+}
+
+input,
+button {
+    background: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    width: 200px;
+    margin-left: -330px;
+}
+
+html {
+    font-family: "TT Hoves Pro Trial Medium";
+}
+
+.container {
+    margin-bottom: 30px;
+    margin-top: -90px;
+}
+
+.btn {
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 100px;
+    padding: 18px 18px;
+    border: 2px solid transparent;
+    /* transition: var(--transition); */
+}
+
+/* .btn-primary {
+    background: hsl(214, 57%, 51%);
+    border-color: hsl(214, 57%, 51%);
+}
+
+.btn-primary:is(:hover, :focus) {
+    background: hsl(214, 82%, 48%);
+    border-color: hsl(214, 72%, 33%);
+} */
+
+.btn-secondary {
+    border-color: hsl(0, 0%, 100%) ;
+    width: 200px;
+    margin-left: 230px;
+}
+
+#dest{
+    margin-left: -280px;
+}
+.btn-secondary:is(:hover) {
+    background: hsla(0, 0%, 2%, 0.1);
+}
+
+
+.tour-search {
+    background: hsl(212, 40%, 75%);
+    padding-block: 30px;
+    margin-left: 430px;
+    margin-right: 430px;
+    border-radius: 10px;
+}
+
+.tour-search-form .input-label {
+    color: hsl(0, 3%, 7%);
+    font-size: 15px;
+    margin-left: -270px;
+    margin-bottom: 10px;
+}
+
+.tour-search-form .input-field {
+    background: hsl(0, 0%, 100%);
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 50px;
+}
+
+.tour-search-form .input-field::placeholder {
+    color: hsl(0, 0%, 60%);
+}
+
+.tour-search-form .input-field::-webkit-datetime-edit {
+    color: hsl(0, 0%, 60%);
+    text-transform: uppercase;
+}
+
+.tour-search-form .input-wrapper {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: 550px;
+    margin-right: 550px;
+}
+
+.custom-shape-divider-bottom-1685387054 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+
+  .custom-shape-divider-bottom-1685387054 svg {
+    position: relative;
+    display: block;
+    width: calc(152% + 1.3px);
+    height: 164px;
+    transform: rotateY(180deg);
+  }
+
+  .custom-shape-divider-bottom-1685387054 .shape-fill {
+    fill: #a46161;
+  }
+/* 
+.tour-search .btn {
+    width: 100%;
+    --border-width: 1px;
+    font-weight: 600px;
+    margin-top: 35px;
+    
+} */
+
+/**
+   * responsive for larger than 580px screen
+   */
+
+/* @media (min-width: 580px) {
+
+    .container {
+        max-width: 580px;
+        margin-inline: auto;
+    }
+
+    .tour-search-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: flex-end;
+        gap: 15px;
+    }
+
+    .tour-search-form .input-wrapper {
+        margin-bottom: 0;
+    }
+
+    .tour-search-form .input-field {
+        padding: 16px 20px;
+    }
+
+    .tour-search .btn {
+        grid-column: span 2;
+        margin-top: 20px;
+    } */
+
+    /**
+   * responsive for larger than 768px screen
+   */
+
+    /* @media (min-width: 768px) {
+
+
+        :root {
+            --fs-5: 15px;
+
+        } */
+
+
+        /**
+   * responsive for larger than 992px screen
+   */
+
+        /* @media (min-width: 992px) {
+
+            .container {
+                max-width: 1050px;
+            }
+
+            .tour-search-form {
+                grid-template-columns: repeat(5, 1fr);
+            }
+
+            .tour-search .btn {
+                --padding: 15px;
+                grid-column: unset;
+                margin-top: 0;
+            } */
+
+            /**
+   * responsive for larger than 1200px screen
+   */
+
+            /* @media (min-width: 1200px) {
+
+                :root {
+
+                    --section-padding: 100px;
+
+                }
+
+            }
+        }
+    }
+} */

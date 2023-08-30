@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/tt-hoves-pro-trial');
+
+        * {
+            font-family: "TT Hoves Pro Trial Medium";
+        }
+        body {
+      background-image: url("oc-gonzalez-xg8z_KhSorQ-unsplash\ \(1\).jpg");
+      object-fit: cover;
+    }
+
+        .trip-planner {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .sidebar {
+            flex: 0 0 200px;
+            background-color: #f1f1f1;
+            padding: 60px;
+            padding-left: 10px;
+            border-radius: 10px;
+        }
+
+        .map-container {
+            display: flex;
+            flex: 1;
+            padding: 20px;
+        }
+
+        .map {
+            flex: 1;
+            background-color: #eaeaea;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .route-box {
+            flex: 1;
+            background-color: #eaeaea;
+            padding: 10px;
+            margin-left: 10px;
+            border-radius: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-right: -160px;
+        }
+
+        .place {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            margin-bottom: 5px;
+            cursor: move;
+            /* transition: 0.6s ease-out; */
+        }
+
+        .place img {
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+        }
+
+        .place-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .place-title {
+            font-weight: bold;
+        }
+
+        .droppable {
+            display: flex;
+            flex-direction: column;
+            min-height: 100px;
+            background-color: #fff;
+            border: 2px dashed #ccc;
+            padding: 0px;
+        }
+
+        .droppable .route-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            margin-bottom: 5px;
+            cursor: move;
+        }
+
+        .droppable .route-item img {
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+        }
+
+        .droppable .route-item .place-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            flex-direction: row;
+            font-size: xx-large;
+            font-family: "TT Hoves Pro Trial ExtraBold";
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+        .place:hover{
+            transform: translateX(15px);
+        }
+    </style>
+</head>
+
+<body>
+    <a href="./plan.html"><lord-icon
+        src="https://cdn.lordicon.com/mmbnousr.json"
+        trigger="hover"
+        colors="outline:#121331,primary:#08a88a,secondary:#ebe6ef"
+        style="width:50px;height:50px;">
+    </lord-icon></a>
+    <lord-icon src="https://cdn.lordicon.com/zaymdtwt.json" trigger="loop"
+        colors="primary:#ffc738,secondary:#121331,tertiary:#3a3347,quaternary:#f24c00,quinary:#ebe6ef"
+        style="width:80px;height:80px; margin-left: 700px;">
+    </lord-icon>
+    <h1>Customized Trip Plan</h1>
+    <div class="trip-planner">
+        <div class="sidebar">
+            <h2>Places-list</h2>
+            <ul id="places-list">
+
+                <div class="place" data-place-id="1" draggable="true">
+                    <img src="https://media.self.com/photos/5f0885ffef7a10ffa6640daa/4:3/w_5240,h_3929,c_limit/travel_plane_corona.jpeg"
+                        alt="Place 1 Image">
+                    <div class="place-info">
+                        <span class="place-title">Place 1</span>
+                        <span class="place-caption">Caption 1</span>
+                    </div>
+                </div>
+                <div class="place" data-place-id="2" draggable="true">
+                    <img src="https://img.freepik.com/free-photo/full-shot-travel-concept-with-landmarks_23-2149153258.jpg?3"
+                        alt="Place 2 Image">
+                    <div class="place-info">
+                        <span class="place-title">Place 2</span>
+                        <span class="place-caption">Caption 2</span>
+                    </div>
+                </div>
+                <div class="place" data-place-id="3" draggable="true">
+                    <img src="https://media.istockphoto.com/id/1285301614/photo/young-man-arms-outstretched-by-the-sea-at-sunrise-enjoying-freedom-and-life-people-travel.jpg?s=612x612&w=0&k=20&c=0QW6GnkuFNYcPZhy26XVHuTc2avJTK8u6l_1iT0SlZk="
+                        alt="Place 3 Image">
+                    <div class="place-info">
+                        <span class="place-title">Place 3</span>
+                        <span class="place-caption">Caption 3</span>
+                    </div>
+                </div>
+            </ul>
+        </div>
+
+        <div class="map-container">
+            <div class="map">
+                <h2>DAY 1 PLAN</h2>
+                <ul id="route-list" class="droppable">
+                    <!-- Initial route items will be dynamically added here -->
+                </ul>
+            </div>
+            <div class="route-box">
+                <h2>DAY 2 PLAN</h2>
+                <ul id="route-list-2" class="droppable">
+                    <!-- Initial route items for box 2 will be dynamically added here -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $(".place").draggable({
+                helper: "clone",
+                revert: "invalid"
+            });
+
+            $(".droppable").droppable({
+                accept: ".place",
+                drop: function (event, ui) {
+                    var droppedPlace = ui.draggable.clone();
+                    droppedPlace.removeClass("place").addClass("route-item");
+                    $(this).append(droppedPlace);
+
+                    // Update the CSS to align the items vertically
+                    $(this).children(".route-item").css({
+                        "margin-top": "5px",
+                        "margin-bottom": "5px"
+                    });
+                }
+            });
+
+            $(".droppable").on("dblclick", ".route-item", function () {
+    var place = $(this).clone();
+    place.removeClass("route-item").addClass("place");
+    $(this).remove();
+    // $("#places-list").append(place);
+  });
+        });
+    </script>
+</body>
+
+</html>

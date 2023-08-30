@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+  <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .preloader img {
+      width: 100px;
+      height: 100px;
+    }
+
+    #preloader {
+      -moz-animation: creator 0s ease-in 5s forwards;
+      /* Firefox */
+      -webkit-animation: creator 0s ease-in 5s forwards;
+      /* Safari and Chrome */
+      -o-animation: creator 0s ease-in 5s forwards;
+      /* Opera */
+      animation: creator 0s ease-in 5s forwards;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes creator {
+      to {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+      }
+    }
+
+    @-webkit-keyframes creator {
+      to {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+      }
+    }
+
+    * {
+      font-family: "TT Hoves Pro Trial DemiBold";
+      text-decoration: none;
+    }
+
+    body {
+      background-image: url("oc-gonzalez-xg8z_KhSorQ-unsplash\ \(1\).jpg");
+      object-fit: cover;
+    }
+
+    h1 {
+      font-size: x-large;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: large;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      margin-top: 120px;
+      margin-left: 280px;
+    }
+
+    .rectangular-box {
+      flex: 1;
+      height: 290px;
+      width: 290px;
+      background: #ccc;
+      margin-right: 50px;
+      border-radius: 10px;
+    }
+
+    /* 
+    .container:hover{
+        color: #3867d6;
+    } */
+
+    button {
+      position: fixed;
+      top: 50%;
+      border-radius: 0 3px 3px 0;
+      background: #2d7498;
+      padding: 8px 20px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .back {
+      left: 10px;
+
+    }
+
+    .next {
+      right: 10px;
+    }
+
+    .unique {
+      border-bottom: 4px solid #f2f2f2;
+      padding-bottom: 2px;
+      margin-top: 20px;
+    }
+
+    .rectangular-box i {
+      margin-left: 130px;
+      margin-top: 100px;
+    }
+
+    .rectangular-box lord-icon {
+      margin-left: 75px;
+      margin-top: 40px;
+    }
+
+    .rectangular-box img {
+      width: 120px;
+      margin-left: 89px;
+      margin-top: 68px;
+    }
+
+    .custom-shape-divider-bottom-1685387054 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+      transform: rotate(180deg);
+    }
+
+    .custom-shape-divider-bottom-1685387054 svg {
+      position: relative;
+      display: block;
+      width: calc(152% + 1.3px);
+      height: 164px;
+      transform: rotateY(180deg);
+    }
+
+    .custom-shape-divider-bottom-1685387054 .shape-fill {
+      fill: #a46161;
+    }
+
+    .rectangular-box:hover{
+background-color: #7dcfb6;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="preloader" id="preloader">
+    <img src="./wired-lineal-497-truck-delivery.gif" alt="Loading">
+  </div>
+
+  <div id="creator" class="creator">
+    <h1 style="margin-top: 20px; font-size: xx-large; font-family: TT Hoves Pro Trial ExtraBold;">Who are you traveling
+      with?</h1>
+    <h2 style="margin-top: 0px;">Start Date: <input type="text"> - End Date: <input type="text"></h2>
+    <div class="container">
+
+      <form id="myform" method="post" action="">
+        <input type="hidden" name="people_count" value="1">
+        <div class="rectangular-box" onclick="submitform()" id="myflexbox">
+          <lord-icon src="https://cdn.lordicon.com/eqfafivu.json" trigger="loop"
+            colors="outline:#121331,primary:#646e78,secondary:#ad6836,tertiary:#2ea28b,quaternary:#f7c7be,quinary:#e9e4ed"
+            state="loop" style="width:150px;height:150px">
+          </lord-icon>
+          <h1>Solo Trip</h1>
+        </div>
+      </form>
+
+      <form id="myform" method="post" action="">
+        <input type="hidden" name="people_count" value="4">
+        <div class="rectangular-box" onclick="submitform()" id="myflexbox">
+          <img src="family-unscreen.gif" />
+          <h1>Vacationing with <br>family</h1>
+        </div>
+      </form>
+
+      <form id="myform" method="post" action="">
+        <input type="hidden" name="people_count" value="5">
+        <div class="rectangular-box" onclick="submitform()" id="myflexbox">
+          <lord-icon src="https://cdn.lordicon.com/kjkiqtxg.json" trigger="loop"
+            colors="outline:#121331,primary:#646e78,secondary:#4bb3fd,tertiary:#ebe6ef"
+            style="width:150px;height:150px">
+          </lord-icon>
+          <h1>Travelling with <br>friends</h1>
+        </div>
+      </form>
+    </div>
+
+
+    <button class="back"><i class="fa-solid fa-arrow-left"></i> <a href="./destination.html">Back</a></button>
+    <button class="next"><i class="fa-solid fa-arrow-right"></i> <a href="./plan.html">Skip</a></button>
+
+    <div class="custom-shape-divider-bottom-1685387054">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path
+          d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+          opacity=".25" class="shape-fill"></path>
+        <path
+          d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+          opacity=".5" class="shape-fill"></path>
+        <path
+          d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+          class="shape-fill"></path>
+      </svg>
+    </div>
+
+  </div>
+  <script>
+    window.addEventListener("load", function () {
+      var preloader = document.getElementById("preloader");
+      var content = document.getElementById("creator");
+
+      preloader.style.display = "none";
+      content.style.display = "block";
+    });
+
+    $(document).ready(function () {
+      $(".preloader").fadeOut();
+    })
+
+    function submitform() {
+
+      document.getElementById("myform").submit();
+
+    }
+  </script>
+</body>
+
+</html>

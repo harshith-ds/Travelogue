@@ -1,0 +1,320 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="land.css">
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger intent="WELCOME" chat-title="Travelogue" chat-icon="./globeimg.png"
+    agent-id="4b74d37c-1a42-4cb5-8008-e1da0571e7d9" language-code="en"></df-messenger>
+  <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+</head>
+
+<body>
+  <div class="main">
+    <div class="preloader" id="preloader">
+      <img src="./wired-lineal-497-truck-delivery.gif" alt="Loading">
+    </div>
+    <div id="creator" class="creator">
+      <header>
+        <div class="whole">
+          <nav class="navbar">
+            <div class="ndiv">
+              <div class="logo"><a href="#logo"><img src="noun-travel-814179.png">Travelogue</a></div>
+              <div class="login">
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#home">Famous</a></li>
+                <li><a href="#home">About</a></li>
+                <li><a href="#home">Signin</a></li>
+              </ul>
+              <div class="profile-container">
+                <img src="./avatar.png" alt="User Profile" id="profile-photo">
+                <div class="popover" id="popover">
+                  <ul>
+                   <li>Profile&nbsp;&nbsp;&nbsp;</li>
+                    <li>Settings</li>
+                    <li>Logout&nbsp;&nbsp;&nbsp;</li>
+                  </ul>
+                  
+                </div>
+              </div>
+              </div>
+              
+            </div>
+          </nav>
+      </header>
+      <main>
+
+        <div class="container">
+
+          <video class="video" id="bg-video" src="./travideo.mp4" autoplay muted loop></video>
+          <section class="section hero">
+            <div class="hero-content">
+              <div class="hero-context">
+                <div class="inro">
+                  <div class="header">
+                    <p><span class="lo">Travel the world</span>
+                      <span class="lo">Turn your dream trip</span>
+                      <span class="lo">into an</span> <span class="lo">adventure</span>
+                      <span class="lo">,Lets explore the world</span>
+                    </p>
+                    <button id="hero-btn"><a href="./index1.html">Start the trip</a></button>
+                  </div>
+                </div>
+                <!-- <button id="hero-btn"><a href="#">start the trip</a></button> -->
+              </div>
+              <div class="hero-banner">
+                <!-- <img src="https://t4.ftcdn.net/jpg/00/54/03/23/360_F_54032338_JONI7mlIPTXs3GtMOV0wtqYSglFbfGSp.jpg" alt="" -->
+                <!-- class="hero-image"> -->
+              </div>
+            </div>
+          </section>
+          <section class="section destinations">
+            <div class="dest-content">
+              <div class="dest-context">
+                <span>Destinations</span>
+                <p>Choose your destinations</p>
+              </div>
+
+              <div class="wrapper">
+                <div class="box">
+                  <div class="image"
+                    style="background-image: url('https://images.unsplash.com/photo-1546412414-e1885259563a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZHViYWl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60')">
+                    <!-- <h5 style="left: 360px; top: 420px;">India</h5> -->
+                    <p>Kashmir</p>
+                  </div>
+                  <div class="image" style="background-image: url('l2.jpg')">
+                    <!-- <h5 style="left: 360px; top: 420px;">Turkey</h5>
+                                <p style="left: 340px; top: 330px;">Istanbul</p> -->
+                    <p>New Delhi</p>
+                  </div>
+                  <div class="image" style="background-image: url('l5.jpg')">
+                    <!-- <h5 style="left: 360px; top: 420px;">France</h5>
+                                <p style="left: 340px; top: 330px;">Paris</p> -->
+                    <p>Tokyo</p>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="image" style="background-image: url('l1.jpg')">
+                    <p>Portugal</p>
+                  </div>
+                  <div class="image" style="background-image: url('l3.jpg')">
+                    <p>Paris</p>
+                  </div>
+                  <div class="image" style="background-image: url('l6.jpg')">
+                    <p>Seoul</p>
+                  </div>
+                  <!-- <div class="image" style="background-image: url('l7.jpg')"><p >Kashmir</p></div> -->
+                </div>
+                <div class="box">
+                  <div class="image" style="background-image: url('l4.jpg')">
+                    <!-- <h5 style="left: 360px; top: 420px;">India</h5>
+                                <p style="left: 340px; top: 330px;">Kashmir</p> -->
+                    <p>Istanbul</p>
+                  </div>
+                  <div class="image" style="background-image: url('l2.jpg')">
+                    <!-- <h5 style="left: 360px; top: 420px;">Turkey</h5>
+                                <p style="left: 340px; top: 330px;">Istanbul</p> -->
+                    <p>Kolkata</p>
+                  </div>
+                  <div class="image" style="background-image: url('l5.jpg')">
+                    <!-- <h5 style="left: 360px; top: 420px;">France</h5>
+                                <p style="left: 340px; top: 330px;">Paris</p> -->
+                    <p>Morroco</p>
+                  </div>
+                  <div class="image" style="background-image: url('l1.jpg')">
+                    <p>Nepal</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <p></p>
+          <section>
+            <div class="packages">
+              <div class="pack-cont">
+                <p>Available packages</p>
+              </div>
+              <div class="package-flexcover">
+                <div class="pack-off">
+                  <div class="pack-flex">
+                    <img
+                      src="https://images.unsplash.com/photo-1546412414-e1885259563a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80https://images.unsplash.com/photo-1546412414-e1885259563a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                      alt="">
+                    <div class="pack-name">
+                      <h2 id="colo">Dubai</h2>
+                      <p id="colo">WELCOME to Dubai</p>
+                      <p>INR 200000
+                      </p>
+                    </div>
+                  </div>
+                  <div class="pack-flex">
+                    <img
+                      src="https://images.unsplash.com/photo-1594924718090-284232024404?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=326&q=80"
+                      alt="">
+                    <div class="pack-name">
+                      <h2 id="colo">Qatar</h2>
+                      <p id="colo">WELCOME come to Qatar</p>
+                      <p>INR 100000</p>
+                    </div>
+                  </div>
+                  <div class="pack-flex">
+                    <img
+                      src="https://images.unsplash.com/photo-1550350505-553196f2a527?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=327&q=80"
+                      alt="">
+                    <div class="pack-name">
+                      <h2 id="colo">Miami</h2>
+                      <p id="colo">WELCOME come to Miami</p>
+                      <p>INR 2650000</p>
+                    </div>
+                  </div>
+
+                </div>
+          </section>
+          <section>
+            <div class="section blog">
+              <div class="blog-content">
+                <!-- <div class="blog-context">
+                                <span>adventure</span>
+                                <p>adventure the world</p>
+                            </div> -->
+                <div class="blogflex">
+                  <div class="blog-img">
+                    <img src="map.png" alt="">
+                  </div>
+                  <div class="blog-aboutus">
+                    <span>About us</span>
+                    <p>Explore the world with us</p>
+                    <ul>
+                      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi optio magnam nostrum ratione
+                        neque ipsam illum iusto distinctio eius ex. Quidem fugiat repellendus corrupti. Ex minima
+                        similique eum harum error!</li>
+                      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam deleniti ea expedita. Natus, et
+                        dignissimos unde quidem, voluptates provident itaque sint veritatis at illo aperiam? Deleniti
+                        architecto ipsam odio commodi!</li>
+                      <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, sit. Saepe consequatur
+                        in delectus adipisci quia, dicta earum minus mollitia quis neque? Ab ipsum iure dolore quibusdam
+                        neque delectus fugit!</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <br><br>
+          <section>
+            <div class="section asta">
+              <div class="asta-content">
+                <div class="asta-aboutus">
+                  <span>Explore</span>
+                  <p>Explore the world with us</p>
+                  <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi optio magnam nostrum ratione
+                      neque ipsam illum iusto distinctio eius ex. Quidem fugiat repellendus corrupti. Ex minima
+                      similique eum harum error!</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam deleniti ea expedita. Natus, et
+                      dignissimos unde quidem, voluptates provident itaque sint veritatis at illo aperiam? Deleniti
+                      architecto ipsam odio commodi!</li>
+                    <!-- <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, sit. Saepe consequatur in delectus adipisci quia, dicta earum minus mollitia quis neque? Ab ipsum iure dolore quibusdam neque delectus fugit!</li> -->
+                  </ul>
+                </div>
+                <div class="asta-img">
+                  <img src="preson.png" alt="">
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </main>
+    </div>
+  </div>
+  <footer>
+
+    <div class="footer-content">
+      <div class="footer-ul">
+        <ul>
+          <h3 id="head">Top Destination</h3>
+          <li><i class="fas fa-arrow-right"></i>Goa</li>
+          <li><i class="fas fa-arrow-right"></i>gokarna</li>
+          <li><i class="fas fa-arrow-right"></i>kerala</li>
+          <li><i class="fas fa-arrow-right"></i>Mumbai</li>
+        </ul>
+        <ul>
+          <h3 id="head">Categories</h3>
+          <li><i class="fas fa-arrow-right"></i>trekking</li>
+          <li><i class="fas fa-arrow-right"></i>Beach</li>
+          <li><i class="fas fa-arrow-right"></i>resort</li>
+          <li><i class="fas fa-arrow-right"></i>monuments</li>
+        </ul>
+      </div>
+      <div class="footer-in">
+        <label for="country">Country</label>
+        <select name="country" id="country">
+          <option value="usa">USA</option>
+          <option value="India">India</option>
+          <option value="china">China</option>
+        </select>
+        <label for="curr">Currency</label>
+        <select name="curr" id="currency">
+          <option value="Dollar">Dollar</option>
+          <option value="ruppee">ruppee</option>
+          <option value="pond">pound</option>
+        </select>
+        <div class="imgglobe">
+          <img src="globeimg.png" class="globeimg" alt="">
+        </div>
+      </div>
+      <div class="footer-ul">
+        <ul>
+          <h3 id="head">Follow us</h3>
+          <li><i class="fab fa-facebook-f"></i> facebook</li>
+          <li><i class="fab fa-twitter"></i> twitter</li>
+          <li><i class="fab fa-instagram"></i> instagram</li>
+          <li><i class="fab fa-linkedin"></i>linkedin</li>
+        </ul>
+        <ul>
+          <h3 id="head">Transport</h3>
+          <li><i class="fas fa-arrow-right"></i>Bus</li>
+          <li><i class="fas fa-arrow-right"></i>Aeroplane</li>
+          <li><i class="fas fa-arrow-right"></i>ship</li>
+          <li><i class="fas fa-arrow-right"></i>railway</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- <img src="globeimg.png"  class="globeimg"alt=""> -->
+  </footer>
+
+  <script src="land.js"></script>
+  <script>
+
+    window.addEventListener("load", function () {
+      var preloader = document.getElementById("preloader");
+      var content = document.getElementById("creator");
+
+      // Hide the preloader and show the content after the page finishes loading
+      setTimeout(()=>{
+        preloader.style.display = "none";
+      content.style.display = "block";
+      },3500)
+    
+      // $('body').delay(350).css({'overflow':'visible'});
+    });
+
+  </script>
+</body>
+
+</html>

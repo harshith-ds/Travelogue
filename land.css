@@ -1,0 +1,671 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0%;
+}
+.main{
+    background-image:linear-gradient(to top,#fceabb,#f8b500);
+}
+
+ .preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.preloader img {
+    width: 100px;
+    height: 100px;
+}
+
+.profile-container {
+    position: relative;
+  }
+  
+  #profile-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .popover {
+    z-index: 999;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: none;
+  }
+  
+  .popover ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .popover ul li {
+    padding: 5px;
+    cursor: pointer;
+    border-bottom: 2px solid #000;
+  }
+
+
+  .popover ul li:hover {
+    background-color: #ffd500;
+  }
+
+  #preloader {
+    -moz-animation: creator 0s ease-in 5s forwards;
+    /* Firefox */
+    -webkit-animation: creator 0s ease-in 5s forwards;
+    /* Safari and Chrome */
+    -o-animation: creator 0s ease-in 5s forwards;
+    /* Opera */
+    animation: creator 0s ease-in 5s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes creator {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes creator {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+}
+.navbar{
+    background-color: #7dcfb6;
+    font-family: "TT Hoves Pro Trial Medium";
+    padding-left: 15px;
+    padding-right: 15px;
+    /* position: fixed; */
+    opacity: 60px;
+    /* margin-right: 5px; */
+}
+.ndiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+   opacity: 90px;
+   
+}
+.login{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* margin-right: -20px; */
+}
+
+.logo a{
+    font-size: 45px;
+    font-weight: 580;
+    /* color: #fff; */
+    text-decoration: none;
+    font-family: 'Comforter Brush', cursive;
+    color: #ffd500;
+}
+
+.logo img{
+    width: 90px;
+    margin-bottom: -30px;
+}
+ /* ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* margin-right: 100px; */
+
+
+li{
+    margin-right: 0px;
+    list-style: none;
+    display: inline-block;
+}
+li a{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+    text-decoration: none;
+}
+li a:hover{
+    /* background-color: #ffd500; */
+    color: #ffd500;
+    /* text-decoration: underline 5px #ffd500; */
+}
+nav{
+    position: relative;
+}
+
+.container{
+    padding: 15px;
+}
+
+.container video{
+    margin-top: 135px;
+z-index: 000;
+position: relative;
+top: -150px;
+left: 0px;
+width: 100%;
+height: 90%;
+object-fit: fill;
+}
+
+.hero-content{
+    display:flex;
+    align-items: center;
+    height: 80%;
+}
+.inro{
+    margin-left:10%;
+    right: 0;
+    /* width: 100%; */
+    /* height: 100vh; */
+    /* background: linear-gradient(#DAE2F8, #D6A4A4); */
+    transition: 1s;
+}
+.header{
+    position: absolute;
+    top: 43%;
+    margin-left: 31%;
+    padding-left: 5px;
+    width: 500px;
+    font-size: 60px;
+    /* font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif; */
+    transform: translate(-50%,-50%);
+    color: white;
+    font-family:"TT Hoves Pro Trial DemiBold" ;
+    
+}
+.header p{
+    /* margin-right: 50px; */
+    line-height: 50px;
+}
+.header span:nth-of-type(1){
+    font-size: 70px;
+    font-weight: bold;
+   
+}
+.header span:nth-of-type(2){
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+.header span:nth-of-type(3){
+    font-size: 30px;
+    font-weight: bold;
+ 
+}
+.header span:nth-of-type(4){
+    font-size: 45px;
+    font-family: 'Comforter Brush', cursive;
+    color: #ffd500;
+}
+.header span:nth-of-type(5){
+    font-size: 30px;
+    
+}
+
+.lo{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+    opacity: 0;
+}
+.lo.active{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+
+}
+.lo.fade{
+    bottom: -150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+.hero-image{
+    margin-top:50px;
+    margin-left:220%;
+    /* margin-bottom: 65%; */
+    /* padding-top: 150px; */
+}
+
+#hero-btn{
+    /* margin-bottom: 80%; */
+    margin-top: 20px;
+    margin-left: 100px;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #ffff;
+    background-color: #ffd500;
+    text-decoration: none;
+}
+#hero-btn:hover{
+    color: white;
+   background-color: #7dcfb6;
+}
+/* ------------------------- */
+ .dest-context span{
+    /* margin-bottom: 1160%; */
+    /* margin-bottom: 1000rem;; */
+    font-family:'Comforter Brush', cursive ;
+    align-items: center;
+    margin-left: 42%;
+    /* margin-top: 13px; */
+    color:#7dcfb6;
+    font-weight: 500;
+    font-size: 65px;
+ }
+ .dest-context p{
+    align-items: center;
+    /* font-weight: bold; */
+    margin-left: 38%;
+    /* margin-bottom: 105px; */
+    /* margin-top: 2px; */
+    font-size: 30px;
+    font-family:'Abril Fatface', cursive;
+
+ }
+ /* .dest-contain{
+     padding: 15px 9%;
+ }
+.dest-flex{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    gap: 25px;
+    flex-direction: row;
+}
+.dest-flex img{
+    
+        object-fit: cover;
+      width: 100%;
+      max-height: 100%;
+
+}
+.dest-flex .box{
+    box-shadow: 0, 5px 10px rgba(0,0,0,0.2); 
+   border-radius: 5px;
+   background-color: #fbf8cc;
+   text-align: center;
+   padding: 30px 20px;
+}
+.dest-flex .box h2{
+    color:rgb(81, 80, 82);
+   font-size: 22px;
+   padding: 10px 0;
+}
+
+.dest-flex .box:hover{
+    box-shadow: 0, 10px 15px rgba(0,0,0,0.3); 
+    transform: scale(1.02);
+
+} */
+.wrapper {
+    display: flex;
+    gap: 10px;
+    padding: 10px 10%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  }
+  .wrapper div {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .image {
+    width: auto;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 500%;
+    background-position-x: 50%;
+    transition: 0.1s;
+  }
+
+  .box{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .wrapper div:last-child .image {
+    max-height: 400px;
+  }
+  .image{
+    border-radius: 25px;
+    width: auto;
+    object-fit:contain;
+  }
+  .image p{
+    color: white;
+    margin-top: 10px;
+    font-size: 30px;
+    margin-left: 15px;
+    font-family:"TT Hoves Pro Trial DemiBold";
+  }
+  
+.blog-content{
+    /* background-color:#fca311 ; */
+  margin-top: 50px;
+  /* margin-left: 150px; */
+}
+
+.blog-context span{
+    /* margin-top: 10px; */
+    font-family:'Comforter Brush', cursive ;
+    align-items: center;
+    margin-left: 42%;
+    /* margin-top: 13px; */
+    color: #7dcfb6;
+    font-size: 60px;
+}
+.blog-context p{
+    font-family:'Abril Fatface', cursive;
+    margin-left: 35%;
+    font-size: 35px;
+    /* margin-bottom: 50px; */
+    padding: 0;
+    font-weight: 200;
+}
+.blogflex{
+    display: flex;
+    align-items: center;
+}
+.blog-aboutus{
+    display: inline;
+    /* margin-bottom: 150px; */
+}
+.blog-aboutus span{
+    font-family:'Comforter Brush', cursive ;
+    align-items: center;
+    margin-left: 5%;
+    /* margin-top: 13px; */
+    color: #7dcfb6;
+    font-size: 60px;
+    padding: 0%;
+}
+.blog-aboutus p{
+    font-size: 30px;
+    padding: 0%;
+    margin-left: 3%;
+    font-family:'Roboto', sans-serif ;
+}
+.blog-aboutus li{
+    /* line-height: 25px; */
+    /* margin-left: 50px; */
+    padding-bottom: 30px;
+    width: 700px;
+    font-size: 20px;
+}
+
+.asta-content{
+    display: flex;
+    /* margin-right: 70px; */
+}
+.asta-aboutus{
+    margin-top: 100px;
+    /* margin-left: 300px; */
+}
+.asta-img{
+    padding-right:105px;
+}
+.asta-aboutus span{
+    font-family:'Comforter Brush', cursive ;
+    align-items: center;
+    margin-left: 8%;
+    /* margin-top: 13px; */
+    color: #7dcfb6;
+    font-size: 60px;
+    padding: 0%;
+}
+.asta-aboutus p{
+    font-size: 30px;
+    padding: 0%;
+    margin-left: 7%;
+    font-family:'Roboto', sans-serif ;
+}
+.asta-aboutus li{
+    font-size: 20px;
+    padding:15px ;
+    width: 700px;
+}
+.asta-aboutus li:nth-of-type(2){
+    padding-bottom: 0%;
+}
+footer{
+    padding: 0%;
+    background-color: #7dcfb6;
+}
+.footer-content{
+   
+    padding-top: 20px;
+    display: flex;
+    /* margin-bottom: 50px; */
+    padding-bottom:60px;
+    font-family: "TT Hoves Pro Trial Medium";
+}
+.footer-ul{
+    display: flex;
+    /* margin-left:65px; */
+    /* justify-content: space-evenly; */
+    /* padding-bottom: 0; */
+}
+.footer-ul ul{
+    margin-left: 75px;
+}
+.footer-ul h3{
+    margin-bottom: 15px;
+    /* padding-right:105px; */
+    /* margin-right: 80px; */
+}
+#head{
+    font-size: x-large;
+    margin-right: 50px;
+    padding-top: 20px;
+}
+.footer-content li{
+    display: flex;
+    padding-bottom: 15px;
+    /* margin-left: 40px; */
+    /* justify-content: space-evenly; */
+    /* padding-bottom: 0; */
+}
+
+.footer-ul li i {
+    padding-right: .5rem;
+    padding-bottom: .7rem;
+    color: #000000;
+}
+
+.footer-ul li:hover i {
+    padding-right: 1.5rem;
+    color: #fff;
+}
+
+.footer-in label{
+    margin-left: 40px;
+    /* padding-bottom: 50%; */
+}
+
+.footer-in select{
+    margin-top: 30px;
+    display: flexbox;
+    /* margin-left: 10px; */
+    background-color: #DAE2F8;
+        border: 2px solid black;
+}
+.globeimg{
+    width:150px;
+    padding-top: 15px;
+    height: 150px;
+    margin-left: 120px;
+    margin-bottom: 0%;
+    /* padding-bottom: 30% */
+}
+/* #bg-video{
+    /* padding: 0%; */
+    /* margin-left: 0%;
+    padding-left: 0%;
+    padding-right: 0%; */
+    /* width: 200%; */
+    /* height: 800px; */
+#bg-video{
+    padding: 0%;
+}
+.pack-cont{
+    margin-left: 42%;
+    color:#7dcfb6;
+    font-weight: 500;
+    font-family:'Comforter Brush', cursive;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.package-flexcover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 100%;
+    height: 100%;
+}
+/* .pack-off img{
+    width: 350px;
+    height: 300px;
+} */
+.pack-off{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    margin-right: 30px;
+
+}
+.pack-flex{
+    width: 360px;
+    height: 400px;
+    padding: 35px;
+    margin-right: 20px;
+    /* background: #fff; */
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    transition: .6s ease-out;
+    
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 45px;
+}
+.pack-flex:hover{
+    transform: translateY(15px);
+}
+.pack-flex:hover:before{
+    opacity: 1;
+}
+.pack-flex:hover .pack-name{
+    opacity: 1;
+    transform: translateY(0);
+}
+.pack-flex:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(to top, #000,transparent) ;
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0;
+    border-radius: 45px;
+}
+.pack-flex img{
+    border-radius: 45px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    
+}
+
+.pack-flex .pack-name{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(60px);
+    transition: 0.5s;
+}
+
+.pack-flex h2{
+    margin: 0;
+    font-family:"TT Hoves Pro Trial Medium";
+    letter-spacing: 3px;
+}
+.pack-name p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    font-family: 'Roboto', sans-serif   ;
+}
+@media (max-width:768px){
+    li a{
+        margin-left: 2rem !important;
+    }
+    .header span:nth-of-type(1) {
+        font-size: 46px  !important;
+        /* margin-top: 224px  !important; */
+    }
+    .globeimg{
+        margin-left: 10px;
+    }
+    .footer-in label {
+        margin-left: -4px;
+        /* padding-bottom: 50%; */
+    }
+    .footer-ul ul {
+        margin-left: -55px !important;
+    }
+   
+    
+}
+ @media (max-width:991px) {
+   .blogflex{
+    flex-direction: column !important;
+   } 
+   .asta-content{
+    flex-direction: column !important;
+   }
+   .footer-content{
+    padding-bottom: 7px !important;
+   }
+   .footer-ul ul{
+    margin-left: -10px !important;
+   }
+   
+}
